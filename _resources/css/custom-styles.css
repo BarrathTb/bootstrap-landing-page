@@ -1,0 +1,155 @@
+/** @format */
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+}
+
+.nav-tabs .nav-item {
+  position: relative;
+}
+.nav-tabs .nav-item.left-tab:hover .nav-link {
+  border-bottom: 4px solid #003e7a;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+  transform: translateY(-5px);
+}
+.nav-tabs .nav-item.left-tab:hover:active {
+  transform: scale(0.9);
+}
+.nav-tabs .nav-item.left-tab:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: auto;
+}
+.nav-tabs .nav-item.right-tab:hover .nav-link {
+  border-bottom: 4px solid #003e7a;
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+  transform: translateY(-5px);
+}
+.nav-tabs .nav-item.right-tab:hover:active {
+  transform: scale(0.9);
+}
+.nav-tabs .nav-item.right-tab:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+.navbar-nav .nav-tabs .nav-item.dropdown {
+  position: static;
+}
+.navbar-nav .nav-tabs .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+.nav-tabs .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+}
+.nav-tabs .nav-link:hover {
+  color: #e6e6e6;
+  transform: translateY(-5px);
+}
+.nav-tabs .nav-link:active {
+  transform: scale(0.9);
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e6e6e6;
+  transform: translateY(-5px);
+}
+.dropdown-menu .dropdown-item:active {
+  transform: scale(0.9);
+}
+@media (max-width: 1200px) {
+  .dropdown-menu .dropdown-menu .add-menu {
+    left: 0;
+    right: auto;
+  }
+}
+
+.accordion-item .accordion-button {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #003e7a;
+  color: white;
+}
+.accordion-item .accordion-button:hover {
+  background-color: #002447;
+}
+.accordion-item .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(181, 208, 234, 0.5);
+}
+.accordion-item .accordion-button:active {
+  transform: scale(0.9);
+}
+.accordion-item .accordion-button.collapsed.bg-primary {
+  background-color: #003e7a !important;
+}
+
+.btn-primary {
+  background-color: #003e7a;
+  border-color: #003e7a;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #002447;
+  border-color: #002447;
+  transform: translateY(-5px);
+}
+.btn-primary:active {
+  transform: scale(0.9);
+}
+
+.bg-primary {
+  background-color: #003e7a !important;
+}
+
+.bg-contain {
+  background-color: #ebf2fa;
+}
+
+.text-primary {
+  color: #003e7a !important;
+}
+
+.text-primary-bold {
+  color: #003e7a !important;
+  font-weight: bold;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-light-bold {
+  color: white;
+  font-weight: bold;
+}
+
+.border-primary {
+  border-color: #003e7a !important;
+}
+
+.box-shadow-primary {
+  box-shadow: 0 1px 3px rgba(0, 62, 122, 0.12), 0 1px 2px rgba(0, 62, 122, 0.24);
+}
+
+.btn-outline-primary {
+  color: #003e7a;
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background-color: #002447;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: white !important;
+  transform: translateY(-5px);
+}
+.btn-outline-primary:active {
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=custom-styles.css.map */

@@ -1,0 +1,59 @@
+/** @format */
+
+:root {
+	--bs-primary: #003e7a;
+}
+
+.btn-primary {
+	background-color: #003e7a;
+	border-color: #003e7a;
+}
+
+.btn-outline-primary {
+	border-color: #003e7a;
+}
+
+.btn-hover-primary {
+	color: #337ab7;
+}
+
+.bg-primary {
+	background-color: #003e7a;
+}
+
+.text-primary-bold {
+	color: #003e7a;
+	font-weight: bold;
+}
+
+.search-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-form {
+	display: none;
+	position: relative;
+}
+
+.search-form.active {
+	display: flex;
+}
+
+.search-icon {
+	cursor: pointer;
+}
+
+/* Default styles for larger screens */
+.bg-primary-container {
+	display: block;
+}
+
+/* Media query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+	.bg-primary-container {
+		display: none;
+	}
+}

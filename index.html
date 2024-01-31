@@ -1,0 +1,1508 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<link rel="stylesheet" href="" />
+		<link
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link type="text/css" rel="stylesheet" href="_resources/css/wctc.css" />
+		<link rel="stylesheet" href="_resources/css/custom-styles.css" />
+
+		<title>barrathtb-bootstrap-landing-page</title>
+	</head>
+
+	<body class="mx-auto">
+		<style>
+			.accordion {
+				--bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+				--bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+			}
+		</style>
+
+		<header class="mx-auto">
+			<!-- Top bar with custom color -->
+			<div
+				class="bg-primary py-2 text-white mx-auto"
+				style="background-color: #003e7a !important; text-decoration: none">
+				<nav class="navbar navbar-expand-lg text-white bg-primary-container">
+					<div class="container-md d-md-flex">
+						<ul class="navbar-nav ms-auto d-none d-lg-flex" id="tertMenu" aria-label="Tertiary Navigation">
+							<li class="mb-2 mx-2">
+								<a class="text-white text-decoration-none" title="MyWCTC" href="#">MyWCTC</a>
+							</li>
+							<li class="mb-2 mx-2 text-white">
+								<a class="text-white text-decoration-none" title="StudentResources" href="">Student Resources</a>
+							</li>
+							<li class="mb-2 mx-2 text-white">
+								<a class="text-white text-decoration-none" title="Alumni" href="">Alumni</a>
+							</li>
+							<li class="mx-2 hidden-xs text-white">
+								<div class="search-wrapper">
+									<form class="search-form d-none-flex" action="" method="get">
+										<input
+											class="form-control me-2 search-input"
+											type="search"
+											placeholder="Search"
+											aria-label="Search" />
+										<button class="btn btn-outline-light" type="submit">Search</button>
+									</form>
+									<button class="btn btn-outline-light mx-2 search-icon fixed-right" type="button">
+										<i class="fas fa-search" style="color: #ffffff"></i>
+										<!-- Using FontAwesome for the search icon -->
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Main navbar -->
+			<div class="header-main mx-auto">
+				<nav class="navbar bg-body-tertiary" style="border-bottom: 3px solid #003e7a">
+					<div class="container-lg">
+						<a class="navbar-brand me-5" href="#"
+							><img
+								src="_resources/images/waukesha_logo.svg"
+								alt="Waukesha County Technical College"
+								width="250"
+								height="84"
+						/></a>
+
+						<ul class="nav nav-tabs d-none d-lg-flex">
+							<li class="nav-item dropdown left-tab">
+								<a
+									class="nav-link active text-primary-bold"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true">
+									ACADEMICS
+								</a>
+								<ul class="dropdown-menu border-primary">
+									<li><a class="dropdown-item text-primary-bold" href="#">Academic Programs</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Academic Calendar</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li>
+										<a class="dropdown-item text-primary-bold" href="#">Courses, Training & Continuing Education</a>
+									</li>
+
+									<li><a class="dropdown-item text-primary" href="#">Course Search</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Register for Courses</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Graduation</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Request a WCTC Transcript</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+
+									<li><a class="dropdown-item text-primary-bold" href="#">High School Dual Credit</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">WCTC Excelerate</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Dual Enrollment Academy</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Start College Now</a></li>
+									<li>
+										<a class="dropdown-item text-primary" href="#"
+											>Transcripted Credit & Advanced Standing Youth Apprenticeships</a
+										>
+									</li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">High School Completion</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">English as a Second Language</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Academic Resources</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Testing Services</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Academic Support</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Academic Advising</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Students with Disabilities</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Change your program</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Add, Drop or Withdraw from Classes</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Online Learning</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown left-tab">
+								<a
+									class="nav-link active text-primary-bold"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true">
+									ADMISSIONS
+								</a>
+								<ul class="dropdown-menu border-primary">
+									<li><a class="dropdown-item text-primary-bold" href="#">Apply to WCTC</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Next Steps After You're Accepted</a></li>
+
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Visit WCTC</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Open House</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Campus Maps</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Register for Courses</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Tuition & Aid</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Financial Aid</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Earning Credit for Prior Learning</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">New Student Orientation</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Transfer Students</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">International Students</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Veterans</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Students with Disabilities</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown right-tab">
+								<a
+									class="nav-link active text-primary-bold"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true">
+									CAMPUS LIFE
+								</a>
+								<ul class="dropdown-menu border-primary">
+									<li><a class="dropdown-item text-primary-bold" href="#">Events Calendar</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Bookstore</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Library</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Career Connections</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Dining</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Wellness & Support</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Mental Health Counseling</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Services</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Fitness at WCTC</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Child Development Center</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">College Safety and Security</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Activities & Organizations</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Multicultural Engagement Center</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Student Clubs</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Student Govenrnment</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Association</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Study Abroad</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown right-tab">
+								<a
+									class="nav-link active text-primary-bold"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true">
+									COMMUNITY
+								</a>
+								<ul class="dropdown-menu border-primary">
+									<li>
+										<a class="dropdown-item text-primary-bold" href="#">Courses, Training & Continuing Education</a>
+									</li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Business Resources</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Corporate Training Center</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Small Business Center</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Hire WCTC Talent</a></li>
+
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Student-Provided Services</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Style & Class Salon and Spa</a></li>
+									<li><a class="dropdown-item text-primary" href="#">The Classic Room & Classic Bistro</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Dental Hygiene Clinic</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Facility Rentals</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">U.S Citizenship</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">English as a Second Language</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Summer Camps</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown right-tab">
+								<a
+									class="nav-link active text-primary-bold"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="true">
+									ABOUT
+								</a>
+								<ul class="dropdown-menu border-primary">
+									<li><a class="dropdown-item text-primary-bold" href="#">Leadership</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">District Board</a></li>
+									<li><a class="dropdown-item text-primary" href="#">Diversity, Equity and Inclusion</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">WCTC Foundation</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Accreditation</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Critical Life Skills</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Institutional Effectiveness</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Campus & Academic Policies</a></li>
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Publications</a></li>
+
+									<li><a class="dropdown-item text-primary" href="#">Currrent Catalog</a></li>
+
+									<li>
+										<hr class="dropdown-divider text-primary" />
+									</li>
+									<li><a class="dropdown-item text-primary-bold" href="#">Forms</a></li>
+								</ul>
+							</li>
+						</ul>
+
+						<!-- Toggler for offcanvas view on smaller screens -->
+						<button
+							class="btn btn-outline-primary d-lg-none"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar"
+							aria-label="Toggle navigation">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div
+							class="offcanvas offcanvas-end"
+							tabindex="-1"
+							id="offcanvasNavbar"
+							aria-labelledby="offcanvasNavbarLabel">
+							<div class="offcanvas-header bg-primary">
+								<h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+								<button type="button" class="btn btn-light" data-bs-dismiss="offcanvas" aria-label="Close">
+									<i class="fas fa-close fa-lg"></i>
+								</button>
+							</div>
+
+							<!-- Offcanvas view for smaller screens -->
+							<div class="offcanvas-body bg-primary">
+								<ul class="navbar-nav bg-primary">
+									<hr class="dropdown-menu-divider text-light" />
+									<li class="nav-item dropdown text-primary">
+										<a
+											class="nav-link active text-light ms-2 my-auto"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="true">
+											ACADEMICS
+										</a>
+
+										<ul class="dropdown-menu ms-2 my-auto border-primary">
+											<li><a class="dropdown-item text-primary-bold" href="#">Academic Programs</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Academic Calendar</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li>
+												<a class="dropdown-item text-primary-bold" href="#">Courses, Training & Continuing Education</a>
+											</li>
+
+											<li><a class="dropdown-item text-primary" href="#">Course Search</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Register for Courses</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Graduation</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Request a WCTC Transcript</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+
+											<li><a class="dropdown-item text-primary-bold" href="#">High School Dual Credit</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">WCTC Excelerate</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Dual Enrollment Academy</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Start College Now</a></li>
+											<li>
+												<a class="dropdown-item text-primary" href="#"
+													>Transcripted Credit & Advanced Standing Youth Apprenticeships</a
+												>
+											</li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">High School Completion</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">English as a Second Language</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Academic Resources</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Testing Services</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Academic Support</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Academic Advising</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Students with Disabilities</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Change your program</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Add, Drop or Withdraw from Classes</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Online Learning</a></li>
+										</ul>
+										<hr class="dropdown-menu-divider text-light" />
+									</li>
+
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link active text-light ms-2"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="true">
+											ADMISSIONS
+										</a>
+										<ul class="dropdown-menu ms-2">
+											<li><a class="dropdown-item text-primary-bold" href="#">Apply to WCTC</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Next Steps After You're Accepted</a></li>
+
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Visit WCTC</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Open House</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Campus Maps</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Register for Courses</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Tuition & Aid</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Financial Aid</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Earning Credit for Prior Learning</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">New Student Orientation</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Transfer Students</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">International Students</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Veterans</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Students with Disabilities</a></li>
+										</ul>
+										<hr class="dropdown-menu-divider text-light" />
+									</li>
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link active text-light ms-2 my-auto"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="true">
+											CAMPUS LIFE
+										</a>
+										<ul class="dropdown-menu ms-2">
+											<li><a class="dropdown-item text-primary-bold" href="#">Events Calendar</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Bookstore</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Library</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Career Connections</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Dining</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Wellness & Support</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Mental Health Counseling</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Services</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Fitness at WCTC</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Child Development Center</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">College Safety and Security</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Activities & Organizations</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Multicultural Engagement Center</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Student Clubs</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Student Govenrnment</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Association</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Study Abroad</a></li>
+										</ul>
+										<hr class="dropdown-menu-divider text-light" />
+									</li>
+
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link active text-light ms-2 my-auto"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="true">
+											COMMUNITY
+										</a>
+										<ul class="dropdown-menu ms-2">
+											<li>
+												<a class="dropdown-item text-primary-bold" href="#">Courses, Training & Continuing Education</a>
+											</li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Business Resources</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Corporate Training Center</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Small Business Center</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Hire WCTC Talent</a></li>
+
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Student-Provided Services</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Style & Class Salon and Spa</a></li>
+											<li><a class="dropdown-item text-primary" href="#">The Classic Room & Classic Bistro</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Dental Hygiene Clinic</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Facility Rentals</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">U.S Citizenship</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">English as a Second Language</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Summer Camps</a></li>
+										</ul>
+										<hr class="dropdown-menu-divider text-light" />
+									</li>
+
+									<li class="nav-item dropdown">
+										<a
+											class="nav-link active text-light ms-2 my-auto"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="true">
+											ABOUT
+										</a>
+										<ul class="dropdown-menu ms-2">
+											<li><a class="dropdown-item text-primary-bold" href="#">Leadership</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">District Board</a></li>
+											<li><a class="dropdown-item text-primary" href="#">Diversity, Equity and Inclusion</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">WCTC Foundation</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Accreditation</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Critical Life Skills</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Institutional Effectiveness</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Campus & Academic Policies</a></li>
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Publications</a></li>
+
+											<li><a class="dropdown-item text-primary" href="#">Currrent Catalog</a></li>
+
+											<li>
+												<hr class="dropdown-divider text-primary" />
+											</li>
+											<li><a class="dropdown-item text-primary-bold" href="#">Forms</a></li>
+										</ul>
+										<hr class="dropdown-menu-divider text-light" />
+									</li>
+								</ul>
+								<ul class="list-unstyled">
+									<li class="mb-2 mx-2 text-white">
+										<a class="text-white text-decoration-none" title="Alumni" href="">Alumni</a>
+									</li>
+
+									<li class="mb-2 mx-2 text-white">
+										<a class="text-white text-decoration-none" title="StudentResources" href="">Student Resources</a>
+									</li>
+
+									<li class="mb-2 mx-2">
+										<a class="text-white text-decoration-none" title="MyWCTC" href="#">MyWCTC</a>
+									</li>
+								</ul>
+
+								<form class="d-flex mt-3" role="search">
+									<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+									<button class="btn btn-outline-white btn-lg search-icon" type="submit">
+										<i class="fas fa-search fa-lg" style="color: #ffffff"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--  Header End -->
+
+		<div class="siteContainer">
+			<!-- Hero Image Section Start -->
+			<div class="row">
+				<div class="col-12 p-0">
+					<div
+						class="jumbotron jumbotron-fluid text-white mx-auto"
+						style="
+							background-image: url('_site-images/academics-take-a-course-students-at-computers-h.jpg');
+							background-size: cover;
+							background-position: center;
+
+							min-height: 415px;
+						">
+						<div class="container text-left">
+							<h1 class="">Continuing Education & Training Courses</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Hero Image Section End -->
+
+			<!-- Main Content Start -->
+			<div class="container-lg justify-content-center">
+				<div class="row mb-4 mx-2 mt-4">
+					<div class="col-md-6">
+						<p class="text-primary">Home > Academics > Continuing Education and Training Courses</p>
+						<div class="mt-4">
+							<h2 class="text-primary-bold">Take a Course</h2>
+							<p class="text-justify text-primary">
+								Taking a class can help you add skills to your resume, advance in your workplace, explore a new interest
+								or pursue a hobby. Most WCTC classes are just 8 weeks long! Browse hundreds of courses designed with
+								your future in mind.
+							</p>
+						</div>
+					</div>
+
+					<!-- Main Contact Tab Start -->
+					<div class="col-xs-12 col-lg-6">
+						<div class="card text-center">
+							<div class="card-header">
+								<ul class="nav nav-tabs card-header-tabs">
+									<li class="nav-item">
+										<a
+											class="nav-link active text-primary-bold"
+											id="contact-tab"
+											data-bs-toggle="tab"
+											href="#contact-information"
+											>CONTACT INFORMATION</a
+										>
+									</li>
+									<li class="nav-item">
+										<a
+											class="nav-link text-primary-bold"
+											id="office-hours-tab"
+											data-bs-toggle="tab"
+											href="#office-hours"
+											>OFFICE HOURS</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="card-body h-100">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="contact-information">
+										<h3 class="text-primary-bold">WCTC Registration Office</h3>
+										<div class="colLeft">
+											<div class="group">
+												<p class="value iconField mail text-primary">
+													<a href="mailto:studentreg@wctc.edu">studentreg@wctc.edu</a>
+												</p>
+												<p class="value iconField phone text-primary"><a href="tel:262.691.5578">262.691.5578</a></p>
+											</div>
+										</div>
+										<div class="colRight">
+											<div class="group">
+												<p class="value iconField pin text-primary">College Center, Room C-019</p>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="office-hours">
+										<h3 class="text-primary-bold">Hours of Operation</h3>
+										<div class="colLeft">
+											<div class="group">
+												<p class="value iconField text-primary">Monday - Friday</p>
+												<p class="value iconField text-primary">8:00am - 5:00pm</p>
+											</div>
+										</div>
+										<div class="colRight">
+											<div class="group">
+												<p class="value iconField">Saturday</p>
+												<p class="value iconField">8:00am - 5:00pm</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Main Contact Tab End -->
+				<!-- Main Card Start -->
+				<div class="col-lg-12 mx-2">
+					<section class="mx-2 mb-4">
+						<div class="row justify-content-center">
+							<div class="col-md-3 icon-card">
+								<div class="card h-100" style="background-image: url(_resources/images/NWS-Stripe-Texture.jpg)">
+									<div class="row h-100">
+										<div class="card-body d-flex flex-column justify-content-between align-items-left h-100">
+											<img
+												src="_site-images/icons/computer-search-bl.png"
+												class="mx-2 mb-2"
+												style="height: 60px; width: 60px"
+												alt="" />
+											<h3 class="text-primary-bold mx-2">Course Search</h3>
+											<p class="text-primary mx-2 text-justify">
+												Search classes by subject, title, or course number. Use our handy filters to find your best fit.
+											</p>
+											<div class="card-btn d-flex justify-content-center">
+												<a href="#" class="btn btn-primary hoverEffect more color1">Browse Courses</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 icon-card">
+								<div class="card h-100" style="background-image: url(_resources/images/NWS-Stripe-Texture.jpg)">
+									<div class="row h-100">
+										<div class="card-body d-flex flex-column justify-content-between align-items-left h-100">
+											<img
+												src="_site-images/icons/check-list-w.png"
+												class="mx-2 mb-2"
+												style="
+													height: 60px;
+													width: 60px;
+													filter: invert(85%) sepia(20%) saturate(2000%) hue-rotate(200deg);
+												"
+												alt="" />
+
+											<h3 class="text-primary-bold mx-2">Registration Steps</h3>
+											<p class="text-primary mx-2 text-justify">
+												Ready to register? Note the CRN number of the course you want to take, then follow these steps.
+											</p>
+											<div class="card-btn d-flex justify-content-center">
+												<a href="#" class="btn btn-primary hoverEffect more color1">Register Now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 icon-card">
+								<div class="card h-100" style="background-image: url(_resources/images/NWS-Stripe-Texture.jpg)">
+									<div class="row h-100">
+										<div class="card-body d-flex flex-column justify-content-between align-items-left h-100">
+											<img
+												src="_site-images/icons/calendar-w.png"
+												class="mx-2 mb-2"
+												style="
+													height: 60px;
+													width: 60px;
+													filter: invert(85%) sepia(20%) saturate(2000%) hue-rotate(200deg);
+												"
+												alt="" />
+
+											<h3 class="text-primary-bold mx-2">Important Dates</h3>
+											<p class="text-primary mx-2 text-justify">
+												Explore key academic calendar dates and registration dates by semester.
+											</p>
+											<div class="card-btn d-flex justify-content-center">
+												<a href="#" class="btn btn-primary hoverEffect more color1">Explore Dates</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 icon-card">
+								<div class="card h-100" style="background-image: url(_resources/images/NWS-Stripe-Texture.jpg)">
+									<div class="row h-100">
+										<div class="card-body d-flex flex-column justify-content-between align-items-left h-100">
+											<img
+												src="_site-images/icons//8-weeks-w.png"
+												class="mx-2 mb-2"
+												style="
+													height: 60px;
+													width: 60px;
+													filter: invert(85%) sepia(20%) saturate(2000%) hue-rotate(200deg);
+												"
+												alt="" />
+
+											<h3 class="text-primary-bold mx-2">8-Week Terms</h3>
+											<p class="text-primary mx-2 text-justify">
+												Build on your academic momentum and complete your education in less time.
+											</p>
+											<div class="card-btn d-flex justify-content-center">
+												<a href="#" class="btn btn-primary hoverEffect more color1">Learn More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!-- Main Card End -->
+
+				<section>
+					<div class="row mb-4 mx-2 mt-4">
+						<div class="col-12">
+							<h2 class="text-primary-bold">Popular Courses</h2>
+							<p class="text-justify text-primary">
+								Check out these exciting offerings in continuing education, small business, ESL and more.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Main Course Accordians -->
+				<div class="container-lg col-lg-12">
+					<div class="col-lg-12 d-lg-flex mb-4">
+						<div class="col-xs-12 col-lg-6 mx-2">
+							<section class="accordion accordion-flush mt-2" id="continuing-education-and-specialized-training">
+								<div class="accordion-item">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseCEST"
+										aria-expanded="false"
+										aria-controls="collapseCEST">
+										Continuing Education and Specialized Training
+									</button>
+
+									<div
+										class="accordion-collapse collapse"
+										id="collapseCEST"
+										data-bs-parent="#continuing-education-and-specialized-training">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#">Business</a>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Culinary/Hospitality</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Fire and EMS</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>First Aid and CPR</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#">Health</a>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Industrial/Skilled</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Law Enforcement and Police In-service</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="community-safety-courses">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseCSC"
+										aria-expanded="false"
+										aria-controls="collapseCSC">
+										Community Safety Courses
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseCSC"
+										data-bs-parent="#community-safety-courses">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Concealed Carry for Civilians</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Personal Protection Scenarios</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Situational Awareness</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Other Community Safety Courses</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="motorcycle-traffic-courses">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseMTC"
+										aria-expanded="false"
+										aria-controls="collapseMTC">
+										Motorcycle/Traffic Courses
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseMTC"
+										data-bs-parent="#motorcycle-traffic-courses">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Motorcycle Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Defensive Driving for Teens</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Group Dynamics *</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Multiple Offender *</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Traffic Safety/Point Reduction *</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>* Held at Waukesha Campus</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="english-as-a-second-language">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseESL"
+										aria-expanded="false"
+										aria-controls="collapseESL">
+										English as a second language
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseESL"
+										data-bs-parent="#english-as-a-second-language">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#">ESL Courses</a>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-xs-12 col-lg-6 mx-2">
+							<section class="accordion accordion-flush mt-2" id="general-education-courses">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseGEC"
+										aria-expanded="false"
+										aria-controls="collapseGEC">
+										General Education Courses
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseGEC"
+										data-bs-parent="#general-education-courses">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Communication Skills Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Mathematics Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Science Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Social Sciences Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="small-business-courses">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseSBC"
+										aria-expanded="false"
+										aria-controls="collapseSBC">
+										Small Business Courses
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseSBC"
+										data-bs-parent="#small-business-courses">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Small Business Credit Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Small Business Noncredit Courses</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="academic-support">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseASCD"
+										aria-expanded="false"
+										aria-controls="collapseASCD">
+										Academic Support and Career Development
+									</button>
+
+									<div class="accordion-collapse collapse mb-2" id="collapseASCD" data-bs-parent="#academic-support">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Career Development</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- College Success Strategies</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Career Development</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Test-Prep Accuplacer</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#">Mathmatics</a>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Level 1 Nursing Math Workshop</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Level 2 Nursing Math Workshop</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Lev 3 & 4 Nurse Math Workshop</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Beginning Algebra - Semester 1</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Beginning Algebra - Semester 2</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Interm Algebra - Semester 1</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Interm Algebra - Semester 2</a
+													>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#">- Basic Math</a>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Academic Support - Math</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#">Reading</a>
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary text-decoration-none" href="#"
+														>- Test Prep - PAX</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<section class="accordion accordion-flush mt-2" id="computer-skills-course">
+								<div class="accordion-item mb-2">
+									<button
+										class="accordion-button d-flex justify-content-between collapsed bg-primary text-light-bold mb-2"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseCSCS"
+										aria-expanded="false"
+										aria-controls="collapseCSCS">
+										Computer Skills Course
+									</button>
+
+									<div
+										class="accordion-collapse collapse mb-2"
+										id="collapseCSCS"
+										data-bs-parent="#computer-skills-course">
+										<div class="accordion-body">
+											<ul class="dropdown ms-2 list-unstyled">
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Business Presentation Software</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Computer Literacy</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Intro to Microsoft Excel</a
+													>
+												</li>
+												<li>
+													<hr class="accordion-item-divider text-primary" />
+												</li>
+												<li>
+													<a class="accordion-item-item text-primary-bold text-decoration-none" href="#"
+														>Introduction to Microsoft Word</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+				<!-- Main Course Accordians End -->
+
+				<!-- Need More Info Section -->
+				<div class="col-12 mx-2 d-flex bg-contain">
+					<div class="need-more-info col-lg-8 mx-4 my-4">
+						<h3 class="need-more-info-title text-primary-bold">Need More Information</h3>
+						<p class="need-more-info-text text-justify text-primary">
+							Trying to find a course that works for you? Our Registration Office can help answer your questions and
+							guide you throughout the course selection and registration process.
+							<a href="#" class="need-more-info-link ms-auto">
+								<i class="fas fa-phone-alt ms-2"></i>
+								<span class="need-more-info-link-text"> </span>
+							</a>
+						</p>
+					</div>
+					<div class="card-btn d-flex align-items-center col-4 mx-2">
+						<a href="#" class="btn btn-primary hoverEffect more color1 text-primary-bold bg-warning"
+							>Request Information</a
+						>
+					</div>
+				</div>
+				<!-- Need More Info Section End -->
+			</div>
+		</div>
+
+		<!-- Footer Start -->
+		<footer class="row" style="background-image: url(_resources/images/footer_bg.jpg); min-height: 470px">
+			<div class="container-lg">
+				<div class="col-xs-12 container-lg justify-content-between">
+					<div class="row">
+						<!-- Left Section: Logo and Contact Information -->
+						<div class="col-lg-3 col-sm-4 col-xs-12 mt-4">
+							<img
+								src="_resources/images/waukesha_logo.svg"
+								class="mx-2 mb-2"
+								style="height: 84px; width: auto; max-width: 100%; filter: invert(95%)"
+								alt="" />
+
+							<div class="row">
+								<div class="col-xs-12 contactLinks">
+									<div class="row">
+										<div class="col-sm-12 col-xs-6 text-center">
+											<a class="text-light" href="tel:+12626915566">
+												<span class="wctcicon-phone" aria-hidden="true"></span>
+												<span class="text-light">Call Waukesha County Technical College at </span>262.691.5566
+											</a>
+											<span class="phone text-light d-none">
+												<span class="" aria-hidden="true"></span>Wisconsin Relay System: 711
+											</span>
+										</div>
+										<div class="col-sm-12 col-xs-6">
+											<a class="map text-light" href=""
+												><span class="wctcicon-location" aria-hidden="true"></span>800 Main Street, Pewaukee, WI
+												53072</a
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Center Section: Buttons in Vertical Column -->
+						<div class="col-lg-6 col-sm-4 col-xs-12 mt-4 d-grid gap-2 flex-column align-items-center">
+							<a class="btn btn-outline-light text-light-bold mb-2" title="Contact Us" href="">Contact Us</a>
+							<a class="btn btn-outline-light text-light-bold mb-2" title="WCTC Foundation" href="">WCTC Foundation</a>
+							<a class="btn btn-outline-light text-light-bold mb-2" title="WCTC Careers" href="">WCTC Careers</a>
+							<a class="btn btn-outline-light text-light-bold mb-2" title="District Board" href="">District Board</a>
+						</div>
+
+						<!-- Right Section: Social Media Logos -->
+						<div class="col-lg-3 col-sm-4 col-xs-12 mt-3 mx-auto d-flex">
+							<div class="d-grid gap-2 justify-content-center align-items-center">
+								<a href=""><img src="_site-images/icons/fb-icon.png" alt="" style="filter: invert(100%)" /></a>
+								<a href=""><img src="_site-images/icons/linkedin-icon.png" alt="" style="filter: invert(100%)" /></a>
+								<a href=""> <img src="_site-images/icons/youtube_icon.png" alt="" style="filter: invert(100%)" /></a>
+								<a href=""><img src="_site-images/icons/twitter-icon.png" alt="" style="filter: invert(100%)" /></a>
+							</div>
+							<div class="d-flex flex-wrap justify-content-center">
+								<a href="" class="me-2"
+									><img
+										src="_resources/images/wtcs-member-logo.png"
+										alt="Wisconsin Technical College System"
+										style="height: 60px; width: 180px"
+								/></a>
+								<a href=""><img src="_resources/images/hlc-logo.png" alt="Higher Learning Commission" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bottom Section: Footer Information -->
+			<div class="col-xs-12 mx-5">
+				<div class="row">
+					<div class="container-lg d-flex justify-content">
+						<div class="col-xs-12 col-sm-push-2 col-sm-8 text-center">
+							<span id="directedit"><a href="" id="de">©</a></span>
+							2022 Waukesha County Technical College
+						</div>
+						<div class="col-xs-12 col-sm-2 col-sm-push-2 infoLinks">
+							<a href="">Legal</a>
+							&nbsp;
+							<a href="">Sitemap</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Footer End -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			crossorigin="anonymous"></script>
+
+		<script src="_resources/js/wctc.js"></script>
+		<script
+			async
+			src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
